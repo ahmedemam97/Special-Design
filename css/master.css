@@ -272,7 +272,7 @@ body {
         display: none;
     }
     
-    .header-area .links.open {
+    .header-area .links .open {
         background-color: #fff;
         padding: 10px;
         display: block;
@@ -284,11 +284,11 @@ body {
         text-align: left;
     }
 
-    .header-area .links.open li {
+    .header-area .links .open li {
         display: block;
         margin: 7px;
     }
-    .header-area .links.open li a {
+    .header-area .links .open li a {
         color: var(--main-color);
         font-weight: bold;
     }
