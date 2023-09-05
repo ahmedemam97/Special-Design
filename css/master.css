@@ -139,7 +139,7 @@ body {
 /* Start Landing Page */
 .landing-page{ 
     min-height: 100vh;
-    background-image: url(/images/image-2.webp);
+    background-image: url(./images/image-2.webp);
     background-size: cover;
     position: relative;
     /* color: white; */
