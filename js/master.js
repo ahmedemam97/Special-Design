@@ -96,7 +96,7 @@ randomBackEl.forEach(span => {
 // Select Landing Page Element 
 let landingPage = document.querySelector('.landing-page');
 // Get Array Of Images
-let imgsArray = ['image-1.jpg', 'image-2.webp', 'image-3.jpg', 'image-4.png', 'image-5.jpg'];
+let imgsArray = ['image-6.jpg', 'image-7.png', 'image-8.jpg', 'image-9.jpg', 'image-10.jpg'];
 
 // Function To Randomize Imgs
 function randomizeImgs() {
@@ -106,7 +106,7 @@ function randomizeImgs() {
             let randomNumber = Math.floor(Math.random() * imgsArray.length);
             // Change Backgound Image Url
             landingPage.style.backgroundImage = `url("images/${imgsArray[randomNumber]}")`;
-        }, 10000);
+        }, 1000);
     }
 }
 
