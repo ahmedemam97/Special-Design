@@ -303,7 +303,7 @@ toggleBtn.onclick = function (e) {
 
     this.classList.toggle('menu-active');
 
-    tLinks.classList.toggle('start');
+    tLinks.classList.toggle('open');
 }
 
 // Click Anywhere Outside Menu And Toggle Button
@@ -313,11 +313,11 @@ document.addEventListener('click', (e) => {
 
     if(e.target !== toggleBtn && e.target !== tLinks) {
 
-        if(toggleBtn.classList.contains('menu-active') && tLinks.classList.contains('start')) {
+        if(toggleBtn.classList.contains('menu-active') && tLinks.classList.contains('open')) {
             
             toggleBtn.classList.remove('menu-active');
 
-            tLinks.classList.remove('start');
+            tLinks.classList.remove('open');
         }
     }
 });
