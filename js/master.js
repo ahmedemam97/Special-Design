@@ -24,6 +24,10 @@ let backgroundLocalItem = localStorage.getItem('background_option');
 
 // Check If Random Background Local Storage Is Not Empty
 if(backgroundLocalItem !== null) {
+    
+    document.querySelectorAll('.random-backgrounds span').forEach(element => {
+        element.classList.remove('active');
+    });
 
     if (backgroundLocalItem === 'true') {
 
@@ -39,9 +43,6 @@ if(backgroundLocalItem !== null) {
 
     }
 
-    document.querySelectorAll('.random-backgrounds span').forEach(element => {
-        element.classList.remove('active');
-    });
 }
 
 // Toggle Spin Class On Icon 
@@ -95,18 +96,20 @@ randomBackEl.forEach(span => {
 
 // Select Landing Page Element 
 let landingPage = document.querySelector('.landing-page');
-// Get Array Of Images
+
 let imgsArray = ['image-6.jpg', 'image-7.png', 'image-8.jpg', 'image-9.jpg', 'image-10.jpg'];
 
 // Function To Randomize Imgs
 function randomizeImgs() {
+
     if (backgroundOption === true) {
         backgroundInterval = setInterval(()=> {
+
             // Get Random Number
             let randomNumber = Math.floor(Math.random() * imgsArray.length);
-            // Change Backgound Image Url
+            
             landingPage.style.backgroundImage = `url("images/${imgsArray[randomNumber]}")`;
-        }, 1000);
+        }, 3000);
     }
 }
 
